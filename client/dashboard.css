@@ -1,0 +1,161 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f7;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 700;
+  color: #388e3c;
+  font-size: 2rem;
+}
+
+p {
+  font-weight: 300;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card styling */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific styles for card elements */
+.footprint-value {
+  font-size: 2rem;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #66bb6a, #43a047);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #43a047, #388e3c);
+  transform: translateY(-3px);
+}
+
+/* Suggestions list styling */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.card ul li {
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.card ul li i {
+  color: #4CAF50;
+  font-size: 1.2rem;
+}
+
+/* Badges styling */
+.badges {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.badge {
+  background: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.3s ease;
+}
+
+.badge:hover {
+  background: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Leaderboard styling */
+.leaderboard {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.leaderboard li {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.leaderboard li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.8rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+}
+
+  

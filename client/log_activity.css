@@ -1,0 +1,112 @@
+/* General page setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a8e063, #56ab2f); /* Eco-friendly gradient background */
+}
+
+/* Container for the log activity form */
+.logActivity-container {
+    background: rgba(255, 255, 255, 0.9); /* Matte translucent effect */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(8px); /* Blurred background */
+}
+
+/* Heading styling */
+.logActivity-container h1 {
+    font-size: 2rem;
+    color: #4CAF50; /* Green color to match eco-theme */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Eco-themed icon before heading */
+.logActivity-container h1::before {
+    content: "🌿"; /* Leaf emoji */
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Input field styling */
+.logActivity-container label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.logActivity-container input[type="text"],
+.logActivity-container input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.logActivity-container input[type="text"]:focus,
+.logActivity-container input[type="number"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Save button styling */
+.logActivity-container button {
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logActivity-container button:hover {
+    background: #45a049;
+}
+
+.logActivity-container button i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+/* Decorative eco-themed elements */
+.leaf-decor {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.leaf1 {
+    top: -20px;
+    left: -20px;
+    transform: rotate(-45deg);
+}
+
+.leaf2 {
+    bottom: -20px;
+    right: -20px;
+    transform: rotate(30deg);
+}

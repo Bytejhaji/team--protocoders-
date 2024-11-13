@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Activity</title>
+  <link rel="stylesheet" href="./log_activity.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <!-- Decorative leaf elements -->
+  <img src="images/leaf.png" class="leaf-decor leaf1" alt="Decorative leaf">
+  <img src="images/leaf.png" class="leaf-decor leaf2" alt="Decorative leaf">
+
+  <div class="logActivity-container">
+    <h1>Log Activity</h1>
+    
+    <!-- Activity Input Field -->
+    <label for="activity">Vechicle</label>
+    <input type="text" id="activity" placeholder="Type of Vechicle">
+
+    <!-- Distance Input Field -->
+    <label for="distance">Distance (km)</label>
+    <input type="number" id="distance" placeholder="in k.m">
+
+    <label for="activity">Mileage</label>
+    <input type="text" id="activity" placeholder="Litre per k.m">
+
+
+    <!-- Save Button -->
+    <button onclick="logActivity()">
+      <i class="fas fa-save"></i> Save Activity
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
